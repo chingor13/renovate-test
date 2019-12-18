@@ -18,7 +18,8 @@
       "packagePatterns": [
         "*"
       ],
-      "semanticCommitType": "deps"
+      "semanticCommitType": "deps",
+      "semanticCommitScope": null
     },
     {
       "packagePatterns": [
@@ -28,9 +29,9 @@
         "^org.sonatype.plugins:",
         "^com.coveo:"
       ],
-      "semanticCommitType": "build"
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
     }
   ],
-  "semanticCommits": true,
-  "semanticCommitScope": ""
+  "semanticCommits": true
 }
