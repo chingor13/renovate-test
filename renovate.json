@@ -3,5 +3,7 @@
     "config:base"
   ],
   "semanticCommits": true,
+  "semanticCommitType": "foo",
+  "semanticCommitScope": "bar",
   "prHourlyLimit": 0
 }
