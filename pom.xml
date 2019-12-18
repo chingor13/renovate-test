@@ -17,105 +17,6 @@
     <version>0.1.1</version>
   </parent>
 
-  <developers>
-    <developer>
-      <id>garrettjonesgoogle</id>
-      <name>Garrett Jones</name>
-      <email>garrettjones@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>pongad</id>
-      <name>Michael Darakananda</name>
-      <email>pongad@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>shinfan</id>
-      <name>Shin Fan</name>
-      <email>shinfan@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>michaelbausor</id>
-      <name>Micheal Bausor</name>
-      <email>michaelbausor@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>vam-google</id>
-      <name>Vadym Matsishevskyi</name>
-      <email>vam@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>tswast</id>
-      <name>Tim Swast</name>
-      <email>tswast@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>neozwu</id>
-      <name>Neo Wu</name>
-      <email>neowu@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>lesv</id>
-      <name>Les Vogel</name>
-      <email>lesv@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>schmidt_sebastian</id>
-      <name>Sebastian Schmidt</name>
-      <email>mrschmidt@google.com</email>
-      <organization>Google</organization>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>andreamlin</id>
-      <name>Andrea Lin</name>
-      <email>andrealin@google.com</email>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>hzyi-google</id>
-      <name>Hanzhen Yi</name>
-      <email>hzyi@google.com</email>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-  </developers>
   <organization>
     <name>Google LLC</name>
   </organization>
@@ -165,27 +66,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-trace-v1</artifactId>
-        <version>0.73.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-trace-v1:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-trace-v2</artifactId>
-        <version>0.73.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-trace-v2:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-cloud-trace-v1</artifactId>
-        <version>0.73.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-trace-v1:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-cloud-trace-v2</artifactId>
-        <version>0.73.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-trace-v2:current} -->
-      </dependency>
-
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-bom</artifactId>
@@ -264,6 +144,18 @@
           <configuration>
             <ignoredUnusedDeclaredDependencies>org.objenesis:objenesis</ignoredUnusedDeclaredDependencies>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>com.coveo</groupId>
+          <artifactId>fmt-maven-plugin</artifactId>
+          <version>2.8</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>format</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
