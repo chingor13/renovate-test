@@ -13,7 +13,9 @@
   "packageRules": [
     {
       "managers": ["maven"],
-      "packageNames": ["com.google.guava:guava*"],
+      "packagePatterns": [
+        "^com.google.guava:guava*"
+      ],
       "versionScheme": "docker"
     },
     {
