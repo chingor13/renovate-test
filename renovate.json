@@ -13,7 +13,23 @@
     "group:recommended",
     "helpers:disableTypesNodeMajor"
   ],
-  "semanticCommits": true,
-  "semanticCommitType": "foo",
-  "semanticCommitScope": "bar"
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "^org.apache.maven.*",
+        "^org.jacoco:*",
+        "^org.codehaus.mojo:*",
+        "^org.sonatype.plugins:*",
+        "^com.coveo:*"
+      ],
+      "semanticCommitType": "build"
+    },
+    {
+      "packagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": "deps"
+    }
+  ],
+  "semanticCommits": true
 }
