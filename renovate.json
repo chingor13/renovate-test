@@ -31,5 +31,6 @@
       "semanticCommitType": "deps"
     }
   ],
-  "semanticCommits": true
+  "semanticCommits": true,
+  "semanticCommitScope": ""
 }
