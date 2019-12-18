@@ -1,9 +1,19 @@
 {
   "extends": [
-    "config:base"
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":maintainLockFilesDisabled",
+    ":autodetectPinVersions",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor"
   ],
   "semanticCommits": true,
   "semanticCommitType": "foo",
-  "semanticCommitScope": "bar",
-  "prHourlyLimit": 0
+  "semanticCommitScope": "bar"
 }
