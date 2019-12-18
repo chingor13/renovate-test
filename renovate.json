@@ -8,12 +8,14 @@
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled",
-    ":autodetectPinVersions",
-    "group:monorepos",
-    "group:recommended",
-    "helpers:disableTypesNodeMajor"
+    ":autodetectPinVersions"
   ],
   "packageRules": [
+    {
+      "managers": ["maven"],
+      "packageNames": ["com.google.guava:guava*"],
+      "versionScheme": "docker"
+    },
     {
       "packagePatterns": [
         "*"
