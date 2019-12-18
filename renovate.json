@@ -27,7 +27,8 @@
         "^org.jacoco:",
         "^org.codehaus.mojo:",
         "^org.sonatype.plugins:",
-        "^com.coveo:"
+        "^com.coveo:",
+        "^com.google.cloud:google-cloud-shared-config"
       ],
       "semanticCommitType": "build",
       "semanticCommitScope": "deps"
