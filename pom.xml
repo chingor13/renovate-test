@@ -183,7 +183,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-trace-v2</artifactId>
-        <version>0.73.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-trace-v2:current} -->
+        <version>0.74.3</version><!-- {x-version-update:grpc-google-cloud-trace-v2:current} -->
       </dependency>
 
       <dependency>
