@@ -16,6 +16,12 @@
   "packageRules": [
     {
       "packagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": "deps"
+    },
+    {
+      "packagePatterns": [
         "^org.apache.maven",
         "^org.jacoco:",
         "^org.codehaus.mojo:",
@@ -23,12 +29,6 @@
         "^com.coveo:"
       ],
       "semanticCommitType": "build"
-    },
-    {
-      "packagePatterns": [
-        "*"
-      ],
-      "semanticCommitType": "deps"
     }
   ],
   "semanticCommits": true,
