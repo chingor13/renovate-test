@@ -1,12 +1,5 @@
 {
   "extends": [
-    ":separateMajorReleases",
-    ":combinePatchMinorReleases",
-    ":prImmediately",
-    ":updateNotScheduled",
-    ":automergeDisabled",
-    ":ignoreModulesAndTests",
-    ":maintainLockFilesDisabled",
-    ":autodetectPinVersions"
+    "config:base"
   ]
 }
