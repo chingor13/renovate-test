@@ -4,7 +4,7 @@
   ],
   "packageRules": [
     {
-      "packagePatternss": ["^com.google.cloud:google-cloud-"],
+      "packagePatterns": ["^com.google.cloud:google-cloud-"],
       "ignoreUnstable": "false"
     }
   ]
